@@ -1,0 +1,140 @@
+@charset "UTF-8";
+.calendar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.month-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.days, .times {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Odstęp między przyciskami */
+  flex-wrap: wrap; /* W przypadku mniejszego ekranu przyciski zawijają się */
+  margin-bottom: 20px;
+}
+
+.day-button, .time-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5; /* Jasnoszary */
+  border: 2px solid #ccc; /* Szara obwódka */
+  border-radius: 20px; /* Zaokrąglone rogi */
+  width: 70px; /* Szerokość przycisku */
+  height: 50px; /* Wysokość przycisku */
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333; /* Kolor tekstu */
+  cursor: pointer;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Cień */
+  transition: all 0.3s ease; /* Animacja */
+}
+
+.day-button:hover, .time-button:hover {
+  background-color: #ffd700; /* Złoty kolor przy najechaniu */
+  color: #fff;
+  border-color: #ffd700;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.day-button.selected, .time-button.selected {
+  background-color: #ffd700; /* Złoty kolor dla zaznaczonego przycisku */
+  color: #fff;
+  border-color: #ffd700;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+.reservation-form {
+  margin-top: 20px;
+  background-color: #f5f5f5; /* Jasnoszare tło formularza */
+  padding: 20px;
+  border-radius: 15px; /* Zaokrąglenie rogów */
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Cień */
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.reservation-form h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.reservation-form label {
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+  text-align: left;
+}
+
+.reservation-form input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  transition: border-color 0.3s ease;
+}
+
+.reservation-form input:focus {
+  border-color: #ffd700;
+  outline: none;
+  box-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+.reservation-form .btn-primary {
+  background-color: #ffd700;
+  border: none;
+  color: #333;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px 20px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.reservation-form .btn-primary:hover {
+  background-color: #ffbf00; /* Lekko ciemniejszy odcień złotego */
+  color: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}
+
+.week-navigation {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Odstęp między przyciskami nawigacji tygodni */
+  margin-bottom: 20px;
+}
+
+.week-navigation button {
+  background-color: #f5f5f5;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.week-navigation button:hover {
+  background-color: #ffd700;
+  border-color: #ffd700;
+  color: #fff;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+}/*# sourceMappingURL=Offer.css.map */

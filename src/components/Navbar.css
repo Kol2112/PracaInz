@@ -1,0 +1,48 @@
+.custom-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.3s ease;
+  padding: 1rem 0;
+  z-index: 10;
+  height: auto;
+}
+.custom-navbar.scrolled {
+  background-color: #000;
+}
+.custom-navbar.scrolled .dropdown-menu {
+  background-color: #000;
+}
+.custom-navbar .navbar-logo {
+  height: 40px;
+}
+.custom-navbar .nav-link {
+  color: #ffffff !important;
+  font-size: 1.1rem;
+  margin-right: 1.5rem;
+  display: inline;
+}
+.custom-navbar .nav-link:hover, .custom-navbar .nav-link.active {
+  color: #ffd700 !important;
+}
+.custom-navbar .nav-item {
+  position: relative;
+}
+.custom-navbar .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.custom-navbar .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+.custom-navbar .dropdown-menu .dropdown-item {
+  color: #ffffff;
+}
+.custom-navbar .dropdown-menu .dropdown-item:hover {
+  background-color: #444;
+  color: #ffd700;
+}/*# sourceMappingURL=Navbar.css.map */

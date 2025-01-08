@@ -1,0 +1,22 @@
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/header.bmp") no-repeat center center;
+  background-size: cover;
+  height: 60vh;
+  padding-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.Best {
+  width: 100px;
+}
+
+.offer-section, .aboutDetailing {
+  background-color: #e8e8e8 !important;
+}
+
+.gallery-section, .offer-section {
+  padding: 2rem;
+}/*# sourceMappingURL=HomePage.css.map */

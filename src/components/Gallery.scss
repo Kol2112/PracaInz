@@ -1,0 +1,55 @@
+.gallery {
+    .gallery-item {
+        cursor: pointer;
+        img {
+            height: 144px;
+            width: 216px;
+            transition: transform 0.3s ease;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+// Stylizacja modala
+.image-modal {
+    position: relative;
+    width: 80%;             // Szerokość modalnego okna (dopasuj według potrzeby)
+    max-width: 900px;       // Maksymalna szerokość
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    outline: none;
+    z-index: 1050;          // Z-index, aby modal był na wierzchu
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8); // Półprzezroczyste tło
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1040;          // Overlay pod modalem
+}
+
+// Przycisk zamykania modala
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #333;
+    background: none;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}

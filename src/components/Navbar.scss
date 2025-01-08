@@ -1,0 +1,59 @@
+.custom-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0); // domyślne półprzezroczyste tło
+    transition: background-color 0.3s ease; // płynna zmiana koloru
+    padding: 1rem 0;
+    z-index: 10;
+    height: auto;
+
+    &.scrolled {
+        background-color: #000; // pełne czarne tło po przewinięciu
+
+        // Zmiana tła dropdownu na czarne po przewinięciu
+        .dropdown-menu {
+            background-color: #000;
+        }
+    }
+
+    .navbar-logo {
+        height: 40px;
+    }
+
+    .nav-link {
+        color: #ffffff !important;
+        font-size: 1.1rem;
+        margin-right: 1.5rem;
+        display: inline;
+
+        &:hover, &.active {
+            color: #ffd700 !important;
+        }
+    }
+
+    .nav-item {
+        position: relative;
+
+        &.dropdown:hover .dropdown-menu {
+            display: block;
+        }
+    }
+
+    .dropdown-menu {
+        background-color: rgba(0, 0, 0, 0.3); // półprzezroczyste tło, gdy navbar jest na górze
+        border: none;
+        margin-top: 0.5rem;
+        transition: background-color 0.3s ease; // płynna zmiana tła
+
+        .dropdown-item {
+            color: #ffffff;
+
+            &:hover {
+                background-color: #444;
+                color: #ffd700;
+            }
+        }
+    }
+}

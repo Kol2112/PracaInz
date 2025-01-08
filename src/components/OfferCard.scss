@@ -1,0 +1,64 @@
+.offer-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%; // Dynamiczna wysokość
+    text-align: center;
+    border-radius: 40px;
+    width: auto;
+    max-width: 240px; // Maksymalna szerokość, żeby było spójne
+    padding: 1rem;
+    background-color: #fff;
+    -webkit-box-shadow: 8px 9px 10px 0px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 8px 9px 10px 0px rgba(66, 68, 90, 1);
+    box-shadow: 8px 9px 10px 0px rgba(66, 68, 90, 1);
+    margin: 0 auto; // Wyśrodkowanie kart
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 1rem;
+        border-radius: 40px;
+
+
+
+    }
+
+    .offer-card-icon {
+        width: 60px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .card-title {
+        margin-bottom: 0.5rem;
+        font-size: 1.25rem;
+        font-weight: bold;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+        color: #333;
+        text-align: center;
+        flex-grow: 1; // Pozwala na elastyczne rozszerzenie tekstu, by nie przycinał się
+        margin-bottom: 1rem;
+    }
+
+    .btn {
+        align-self: center;
+        padding: 0.5rem 2rem;
+        border-radius: 40px;
+        background-color: #ffd700;
+        font-weight: bold;//         border-radius: 40px;
+        -webkit-box-shadow: 4px 4px 5px 0px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 4px 4px 5px 0px rgba(66, 68, 90, 1);
+        box-shadow: 4px 4px 5px 0px rgba(66, 68, 90, 1);
+        margin-top: 1rem;
+
+    }
+    .btn:hover{
+        background-color:#FFCD39;
+        border-color: #FFCD39;
+    }
+}
