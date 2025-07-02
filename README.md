@@ -36,16 +36,16 @@ Create a .env file or edit mongo.env with your MongoDB URI:
 
 MONGO_URI=your_mongo_connection_string
 
-#Run the application:
+**Run the application**:
 npm start
-🧪 Testing
+🧪 **Testing**
 Basic setup for testing is included via setupTests.js. Add your unit/integration tests as needed.
 
-📷 Preview
+📷 **Preview**
 Add screenshots or a link to a demo here if available.
 
-📄 License
+📄 **License**
 This project is licensed for educational and portfolio use. Contact the author for commercial use or contributions.
 
-👨‍💻 Author
+👨‍💻 **Author**
 GitHub: Kol2112
