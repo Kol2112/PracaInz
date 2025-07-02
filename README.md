@@ -28,24 +28,22 @@ This is a full-stack web application built for an **auto detailing studio** usin
    ```bash
    git clone https://github.com/Kol2112/PracaInz.git
    cd PracaInz
-- **Install frontend dependencies**:
+2. **Install frontend dependencies**:
   ```bash
-   - npm install
-- **Set up environment variables** 
-- **Create a .env file or edit mongo.env with your MongoDB URI**: 
+    - npm install
+```
+3. **Set up environment variables**
+Create a .env file or edit mongo.env with your MongoDB URI**: 
 MONGO_URI=your_mongo_connection_string
 
-- **Run the application**:
+4.**Run the application**:
 npm start
 
-- 🧪 **Testing** 
+5.🧪 **Testing** 
 Basic setup for testing is included via setupTests.js. Add your unit/integration tests as needed.
 
-- 📷 **Preview** 
-Add screenshots or a link to a demo here if available.
-
-- 📄 **License** 
+📄 **License**: 
 This project is licensed for educational and portfolio use. Contact the author for commercial use or contributions.
 
-- 👨‍💻 **Author** 
+👨‍💻 **Author**: 
 GitHub: Kol2112
